@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="dataItems.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section class="container dashbord-section">
+      <nav class="navbar navbar-expand-lg p-3 navbar-dark bg-dark">
+        <div class="container-fluid p-0">
+          <a href="" class="navbar-brand"> Abhilash </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="./dashbord.html" class="nav-item nav-a me-2"> Home </a>
+              <a href="./cart.html" class="nav-item nav-a me-2"> Cart </a>
+              <a href="./attendance.html" class="nav-item nav-a"> Todo-list </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="p-3 content">
+        <div class="task-birthday">
+        <h3>Task :Birthday template</h1>
+            <div class="d-flex">
+            <div class="form me-3">
+                <label>Full Name</label>
+                <input type="text" class="form-control" placeholder="Full name" id="task-name"/>
+              </div>
+              <div class="form">
+                <label>Message</label>
+                <input type="text" class="form-control" placeholder="Message" id="task-msg"/>
+              </div>
+            </div>
+            <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                 Check to show the card
+                </label>
+              </div>
+            <div class="card mt-3 birthday-card d-none">
+                <img src="https://images.all-free-download.com/images/graphicwebp/birthday_poster_template_modern_bright_design_balloon_decor_6845492.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text custom-card-text"></p>
+                </div>
+              </div>
+        </div>
+        <hr/>
+        <div class="task-todo mt-3">
+            <h3>Task :To do list</h3>
+            <p>Click <a href="./attendance.html">here</a></p>
+        <hr/>
+        </div>
+        <div class="task-todo mt-3">
+            <h3>Task :Billing items</h3>
+            <div class="d-flex gap-5">
+            <div class="bill-items"></div>
+            <div class="bill-info">
+                <h5>Selected Items</h5>
+                <div class="bill-card ">
+                 
+                </div>
+                <hr/>
+                <p class="total">Total bill $0</p>
+            </div>
+           
+        </div>
+        <hr/>
+        </div>
+        <div class="task-todo mt-3">
+          <h3>Task :Products </h3>
+          <p>Click <a href="./cart.html">here</a></p>
+      <hr/>
+      </div>
+      <div class="task-todo mt-3">
+        <h3>Task :Dropdown </h3>
+        <div class="d-flex gap-3">
+          <select class="parent-select form-select form-select-lg mb-3">
+            <option>select</option>
+            <option value="1">Animals</option>
+            <option value="2">Birds</option>
+            <option value="3">Movies</option>
+            <option value="4">colors</option>
+          </select>
+          <select class="child-select form-select form-select-lg mb-3">
+            <option>select</option>
+          
+          </select>
+        </div>
+    <hr/>
+    </div>
+      </main>
+      
+      <footer class="d-flex justify-content-between navbar-dark bg-dark p-3">
+        <p class="m-0 footer-brand">Abhilash</p>
+        <p class="m-0">Made with ♡ and vanillaJs</p>
+      </footer>
+    </section>
+  </body>
+</html>
